@@ -1,19 +1,58 @@
 {
-  "name": "vue-backstage",
-  "version": "1.0.0",
-  "description": "vue",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/khukeke/vue-backstage.git"
-  },
-  "author": "khukeke",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/khukeke/vue-backstage/issues"
-  },
-  "homepage": "https://github.com/khukeke/vue-backstage#readme"
+    "name": "vue-backstage",
+    "version": "1.0.0",
+    "description": "vue",
+    "main": "index.js",
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "core-js": "^3.6.4",
+        "vue": "^2.6.11"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.2.0",
+        "@vue/cli-plugin-eslint": "~4.2.0",
+        "@vue/cli-service": "~4.2.0",
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.1.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "@vue/prettier",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {}
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/khukeke/vue-backstage.git"
+    },
+    "author": "khukeke",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/khukeke/vue-backstage/issues"
+    },
+    "homepage": "https://github.com/khukeke/vue-backstage#readme"
 }
