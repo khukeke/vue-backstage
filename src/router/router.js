@@ -1,8 +1,8 @@
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import App from '../App.vue'
 import Test from '../components/Test.vue'
+import HelloWorld from '../components/HelloWorld.vue'
 
 Vue.use(VueRouter)
 
@@ -12,18 +12,17 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
-        name: 'app',
-        component: App,
+        name: 'HelloWorld',
+        component: HelloWorld
     },
     {
         path: '/test',
-        name: 'test',
+        name: 'Test',
         component: Test
-    }
+    },
 ]
-
 const router = new VueRouter({
-    routes
+    routes,
     // strice: process.env.NODE_ENV !== 'production'
 })
 export default router;

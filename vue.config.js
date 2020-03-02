@@ -1,6 +1,6 @@
 module.exports = {
     publicPath: '/',
-    // runtimeCompiler: true,
+    runtimeCompiler: true,
     // configureWebpack: {
     //     resolve: {
     //         alias: {
